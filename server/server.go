@@ -38,6 +38,8 @@ func main() {
 
 	// サーバーを起動
 	fmt.Println("Starting server on port 8080...")
+	fmt.Println("Download: http://localhost:8080/download")
+	fmt.Println("Press Ctrl+C to stop server")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		fmt.Println("Server failed", err)
 	}
